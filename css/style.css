@@ -5,11 +5,12 @@
 }
 
 
-
+/* luas content */
 #luas-content {
     width: 20% ;
 
 }
+
 #btn-luas-content {
     width: 5% ;
     height: 10% ;
@@ -78,7 +79,8 @@ main {
     padding: 16px;
     display:flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:center;
+    gap: 15px;
 
 }
 .section-header button {
