@@ -4,6 +4,8 @@
     padding: 0 ;
 }
 
+
+
 #luas-content {
     width: 20% ;
 
@@ -74,6 +76,22 @@ main {
 .section-header {
     background-color: aquamarine;
     padding: 16px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.section-header button {
+    background-color: black;
+    color: white;
+    border: none ;
+    padding: 8px 10px;
+    font-weight: bolder;
+    border-radius: 10px;
+    cursor:  pointer;
+}
+.section-header button:hover {
+    background-color: greenyellow;
 }
 
 .section-image {
@@ -83,16 +101,6 @@ main {
     justify-self: center;
     background-size: cover;
     background-position: center;
-}
-
-.calculate-content {
-    border: 1px solid;
-    height: 300px;
-    align-content: end ;
-    display: flex ;
-    flex-direction: column ;
-    justify-content: end ;
-    align-items: center ;
 }
 
 section {

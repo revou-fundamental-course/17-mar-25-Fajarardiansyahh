@@ -31,43 +31,106 @@
             <a href="" class="nav-fitur-non-active">Persegi Panjang</a>
         </div>
 
-        <!-- Section Luas -->
-        <section>
-            <header class="section-header">
-                <h1>Luas Persegi</h1>
+        <!--Rumus Luas Persegi-->
+        <div class="container">
+            <header class="selection-header1">
+                
             </header>
+            <section>
+                <header class="section-header">
+                    <h1>Luas Persegi</h1>
+                    <button onclick="reset()">reset</button>
 
-            <!-- Gambar Luas -->
-            <div class="section-image"></div>
+                </header>
 
-            <!-- Konten Perhitungan -->
-            <div class="calculate-content">
-                <input type="text" id="luas-content" placehorder="masukkan angkanya">
-                <input type="button" id="btn-luas-content" value="Hitung"> </input>
-            </div>
-        </section>
+                <!-- Gambar Luas -->
+                <div class="section-image"></div>
+    
+                <!-- Konten Perhitungan -->
+                <div class="calculate-content">
+                    <div style="display: flex; flex-direction: column; align-items: start;">
+                        <P><b>Rumus: <br>L = S x s</b></P>
+                    <P>Dimana:<br>
+                        L = Luas<br>
+                        S = Sisi
+                    </P>
+
+                    </div>
+                    <form id="form-luas-keliling">
+                        <input type="text" id="input-sisi" placehorder="masukkan angkanya">
+                        <button type="submit">Hitung</button>
+                    </form>
+                    <div id="hasil"></div>
+                </div>
+            </section>
+        </div>
+        <!-- Section Luas -->
 
         <!-- Section Keliling -->
         <section>
             <header class="section-header">
                 <h1>Keliling Persegi</h1>
+                <button onclick="resetKeliling()">reset</button>
+                
             </header>
 
             <!-- Gambar Keliling -->
             <div class="section-image"></div>
 
             <!-- Konten Perhitungan -->
-            <div class="calculate-content">
-                <input type="text" id="Konten-perhitungan" placehorder="masukkan angkanya">
-                <input type="button" id="btn-keliling-content" value="Hitung"> </input>
+            <div 
+            class="calculate-content">
+            <div style="display: flex; flex-direction: column; align-items: start;">
+                <P><b>Rumus: <br>L = S x s</b></P>
+                <P>Dimana:<br>
+                    L = Luas<br>
+                    S = Sisi
+                </P>
             </div>
+            <form id="form-keliling-persegi">
+                
+                <input type="text" id="input-keliling" placehorder="masukkan angkanya">
+                <button type="submit">Hitung</button>
+                <div id="hasil-keliling"></div>
+            </form>
+
+        </section>
+        
+        <section>
+            <header class="section-header">
+                <h1>Persegi Panjang</h1>
+                <button onclick="resetPersegiPanjang()">reset</button>
+                
+            </header>
+
+            <!-- Gambar Persegi Panjang -->
+            <div class="section-image"></div>
+
+            <!-- Konten Perhitungan -->
+            <div 
+            class="calculate-content">
+            <div style="display: flex; flex-direction: column; align-items: start;">
+                <P><b>Rumus: <br>L=P x L</b></P>
+                <P>Dimana:<br>
+                    L = Lebar<br>
+                    P = Panjang
+                </P>
+            </div>
+            <form id="form-persegi-panjang">
+                
+                <input type="number" id="input-persegi-panjang" placehorder="masukkan angkanya">
+                <input type="number" id="input-lebar">
+                <button type="submit">Hitung</button>
+                <div id="hasil-persegi-panjang"></div>
+            </form>
 
         </section>
     </main>
-<!--ini contoh-->
     <!-- Footer -->
     <footer>
         <p>Made by Fajar Ardiansyah@2025</p>
     </footer>
+    <!--JS Eksternal-->
+    <script src="js/script.js"></script>
 </body>
 </html> 
