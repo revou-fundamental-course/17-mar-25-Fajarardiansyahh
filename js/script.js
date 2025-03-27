@@ -85,3 +85,16 @@ function resetPersegiPanjang() {
     inputLebar.value=0
     inputPersegiPanjang.value=0
 }
+
+const sectionLuasKeliling=document.querySelector(".luas-keliling")
+const sectionPersegiPanjang=document.querySelector(".persegi-panjang")
+sectionPersegiPanjang.style.display="none"
+function btnPersegi() {
+sectionPersegiPanjang.style.display="none"
+sectionLuasKeliling.style.display="block"
+}
+
+function btnPersegiPanjang() {
+sectionPersegiPanjang.style.display="block"
+sectionLuasKeliling.style.display="none"
+}

@@ -27,76 +27,78 @@
 
         <!-- Navigasi Fitur -->
         <div class="nav-fitur">
-            <a href="" class="nav-fitur-active">Persegi</a>
-            <a href="" class="nav-fitur-non-active">Persegi Panjang</a>
+            <button onclick="btnPersegi()">Persegi</button>
+            <button onclick="btnPersegiPanjang()">Persegi Panjang</button>
         </div>
-
-        <!--Rumus Luas Persegi-->
-        <div class="container">
-            <header class="selection-header1">
-                
-            </header>
+        <div class="luas-keliling">
+            <!--Rumus Luas Persegi-->
+            <div class="container">
+                <header class="selection-header1">
+                    
+                </header>
+                <section>
+                    <header class="section-header">
+                        <h1>Luas Persegi</h1>
+                        <button onclick="reset()">reset</button>
+    
+                    </header>
+    
+                    <!-- Gambar Luas -->
+                    <div class="section-image"></div>
+        
+                    <!-- Konten Perhitungan -->
+                    <div class="calculate-content">
+                        <div style="display: flex; flex-direction: column; align-items: start;">
+                            <P><b>Rumus: <br>L = S x s</b></P>
+                        <P>Dimana:<br>
+                            L = Luas<br>
+                            S = Sisi
+                        </P>
+    
+                        </div>
+                        <form id="form-luas-keliling">
+                            <input type="text" id="input-sisi" placehorder="masukkan angkanya">
+                            <button type="submit">Hitung</button>
+                        </form>
+                        <div id="hasil"></div>
+                    </div>
+                </section>
+            </div>
+    
+            <!-- Section Keliling -->
             <section>
                 <header class="section-header">
-                    <h1>Luas Persegi</h1>
-                    <button onclick="reset()">reset</button>
-
+                    <h1>Keliling Persegi</h1>
+                    <button onclick="resetKeliling()">reset</button>
+                    
                 </header>
-
-                <!-- Gambar Luas -->
+    
+                <!-- Gambar Keliling -->
                 <div class="section-image"></div>
     
                 <!-- Konten Perhitungan -->
-                <div class="calculate-content">
-                    <div style="display: flex; flex-direction: column; align-items: start;">
-                        <P><b>Rumus: <br>L = S x s</b></P>
+                <div 
+                class="calculate-content">
+                <div style="display: flex; flex-direction: column; align-items: start;">
+                    <P><b>Rumus: <br>L = S x s</b></P>
                     <P>Dimana:<br>
                         L = Luas<br>
                         S = Sisi
                     </P>
-
-                    </div>
-                    <form id="form-luas-keliling">
-                        <input type="text" id="input-sisi" placehorder="masukkan angkanya">
-                        <button type="submit">Hitung</button>
-                    </form>
-                    <div id="hasil"></div>
                 </div>
+                <form id="form-keliling-persegi">
+                    
+                    <input type="text" id="input-keliling" placehorder="masukkan angkanya">
+                    <button type="submit">Hitung</button>
+                    <div id="hasil-keliling"></div>
+                </form>
+    
             </section>
+
         </div>
-
-        <!-- Section Keliling -->
-        <section>
-            <header class="section-header">
-                <h1>Keliling Persegi</h1>
-                <button onclick="resetKeliling()">reset</button>
-                
-            </header>
-
-            <!-- Gambar Keliling -->
-            <div class="section-image"></div>
-
-            <!-- Konten Perhitungan -->
-            <div 
-            class="calculate-content">
-            <div style="display: flex; flex-direction: column; align-items: start;">
-                <P><b>Rumus: <br>L = S x s</b></P>
-                <P>Dimana:<br>
-                    L = Luas<br>
-                    S = Sisi
-                </P>
-            </div>
-            <form id="form-keliling-persegi">
-                
-                <input type="text" id="input-keliling" placehorder="masukkan angkanya">
-                <button type="submit">Hitung</button>
-                <div id="hasil-keliling"></div>
-            </form>
-
-        </section>
         
         <!-- Section Luas -->
-        <section>
+        <section class="persegi-panjang">
             <header class="section-header">
                 <h1>Persegi Panjang</h1>
                 <button onclick="resetPersegiPanjang()">reset</button>
